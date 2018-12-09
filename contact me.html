@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+</head>
+<body>
+<h1>My contact Details</h1>
+<p>My Fictional Address</p>
+<p>07763718463</p>
+<p>myemail @gmail.com</p>
+
+
+
+<!--==========================-->
+<!-- <form action=""  -->
+<!--==========================-->
+<!--action - whats happen after  you click on submit in our case will open default email app, and add the address to "send to" box, and post in this case means we go to transfer the user types in text area into these input fields into the email client in order to change that...-->
+
+
+<!--==========================-->
+<!-- enctype(encoding type) -->
+<!--==========================-->
+<!--we add attributes enctype(encoding type) its specify just as our website in encoded in UTF8, we're going to say that data in our form in encoded in plain text so that way when it launches the mail app you won't have these funny percentage signs and numbers you'll instead just have plain text  -->
+
+<!--================-->
+<!--    name=""     -->
+<!--================-->
+<!--name ="" identify the data that's inside each of these input
+ because we've  add something to the  name attribute, your email, your name, your message, now when we submit our form and we post this data that the users inputted to our mail client then it knows how to classify each bit of data, so it's look like in mail app yourName = yosi, youEmail = sflkndsfkldn@fsdklfmsdks.com, your message = what you write in text area      -->
+
+<form  action="mailto:info@londonappbrewery.com" method="post" enctype="">
+    <label>Your name:</label>
+    <input type="text" name="youName" value=""><br>
+    <label>Your Email:</label>
+    <input type="email" name="yourEmail" value=""><br>
+    <label>Your Message</label><br>
+    <!--textarea element has two attributes that are really important
+     one is the number rows and the other ones a number of columns, so rows
+     determine how tall your text area, and columns determine how wide it          should be. -->
+    <textarea name="yourMessage" id="" cols="30" rows="10"></textarea><br>
+
+    <input type="submit" name="" >
+
+    <!--she use it then change it with other-->
+    <!--<input type="color" name="" value=""><br>-->
+    <!--<label>Password</label>-->
+    <!--<input type="password" name="" value="">-->
+    <!--<label>Do you want to sign up to the email list?</label>-->
+    <!--<input type="checkbox" name="" value="">-->
+
+</form>
+</body>
+</html>
